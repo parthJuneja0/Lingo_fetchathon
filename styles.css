@@ -1,0 +1,393 @@
+/* Body and Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.options {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.options:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#next {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#next:hover {
+    background-color: #0056b3;
+}
+
+/* Valid Message */
+#valid {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    color: #28a745;
+    font-weight: bold;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#novalid {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #ef4f4f;
+    border: 1px solid #ef4f4f;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Additional Styling */
+#q11 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    color: #555555;
+}
+
+#q11 p {
+    margin: 0;
+}
+#q1 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q1 p {
+    margin: 0;
+}
+
+#q1 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q1 .options:hover {
+    background-color: #9fd6c8;
+}
+#q2 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q2 p {
+    margin: 0;
+}
+
+#q2 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q2 .options:hover {
+    background-color: #9fd6c8;
+}
+#q3 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q3 p {
+    margin: 0;
+}
+
+#q3 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q3 .options:hover {
+    background-color: #9fd6c8;
+}
+#q4 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q4 p {
+    margin: 0;
+}
+
+#q4 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q4 .options:hover {
+    background-color: #9fd6c8;
+}
+#q5 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q5 p {
+    margin: 0;
+}
+
+#q5 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q5 .options:hover {
+    background-color: #9fd6c8;
+}
+#q6 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q6 p {
+    margin: 0;
+}
+
+#q6 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q6 .options:hover {
+    background-color: #9fd6c8;
+}
+#q7 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q7 p {
+    margin: 0;
+}
+
+#q7 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q7 .options:hover {
+    background-color: #9fd6c8;
+}
+#q8 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q8 p {
+    margin: 0;
+}
+
+#q8 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q8 .options:hover {
+    background-color: #9fd6c8;
+}
+#q9 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q9 p {
+    margin: 0;
+}
+
+#q9 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q9 .options:hover {
+    background-color: #9fd6c8;
+}
+#q10 {
+    margin: 20px auto;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#q10 p {
+    margin: 0;
+}
+
+#q10 .options {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#q10 .options:hover {
+    background-color: #9fd6c8;
+}
+p{
+    color: white;
+}
+h3{
+    color: white;
+}
+pre{
+    color: white;
+}

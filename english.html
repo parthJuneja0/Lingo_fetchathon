@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="q1">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>CAR</b></p>
+        </div>
+        <div>
+            <button class="options">गरम</button>
+            <button class="options">पानी</button>
+            <button class="options">गाड़ी</button>
+            <button class="options">घर</button>
+        </div>
+    </div>
+    <div id="q2" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>water</b></p>
+        </div>
+        <div>
+            <button class="options">गरम</button>
+            <button class="options">पानी</button>
+            <button class="options">गाड़ी</button>
+            <button class="options">घर</button>
+        </div>
+    </div>
+    <div id="q3" style="display: none;">
+        <div>
+
+            <p>Choose Correct Answer <br> <b>गर्म</b></p>
+        </div>
+        <div>
+            <button class="options">hot</button>
+            <button class="options">ice</button>
+            <button class="options">house</button>
+            <button class="options">big</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q4" style="display: none;">
+        <div>
+
+            <p>Choose Correct Answer <br> <b>तुम्हारा</b></p>
+        </div>
+        <div>
+            <button class="options">is</button>
+            <button class="options">your</button>
+            <button class="options">mine</button>
+            <button class="options">house</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q5" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>we</b></p>
+        </div>
+        <div>
+            <button class="options">हम</button>
+            <button class="options">तुम्हारा अपना</button>
+            <button class="options">गाड़ी</button>
+            <button class="options">घर</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q6" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>Audacity</b></p>
+        </div>
+        <div>
+            <button class="options">साहस</button>
+            <button class="options">इसलिए</button>
+            <button class="options">इतना ही</button>
+            <button class="options">अंत</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q7" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>conclusion</b></p>
+        </div>
+        <div>
+            <button class="options">छाता</button>
+            <button class="options">अंत</button>
+            <button class="options">गाड़ी</button>
+            <button class="options">साहस</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q8" style="display: none;">
+        <div>
+
+            <p>Choose Correct Answer<br> <b>जबकि</b></p>
+        </div>
+        <div>
+            <button class="options">Whereas</button>
+            <button class="options">Therefore</button>
+            <button class="options">Thus</button>
+            <button class="options">Hence</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q9" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>notorious</b></p>
+        </div>
+        <div>
+            <button class="options">कुख्यात</button>
+            <button class="options">पानी</button>
+            <button class="options">नटखट</button>
+            <button class="options">घर</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="q10" style="display: none;">
+        <div>
+
+            <p>सही उत्तर चूने <br> <b>coin</b></p>
+        </div>
+        <div>
+            <button class="options">सिक्का</button>
+            <button class="options">पानी</button>
+            <button class="options">गाड़ी</button>
+            <button class="options">घर</button>
+        </div>
+    </div>
+    <div id="valid" style="display: none;">
+
+    </div>
+    <div id="novalid" style="display: none;">
+
+    </div>
+    <div id="q11" style="display: none;">
+        <p>Practice more in daily life ☺ <br>THANK YOU!</p>
+    </div>
+    <button id="next" style="display: none;">Next</button>
+    <script>
+        var buttons = document.querySelectorAll('.options');
+        a = ['गाड़ी', 'पानी', 'hot', 'your', 'हम', 'साहस', 'अंत', 'Whereas', 'कुख्यात', 'सिक्का']
+        j = -1;
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                if (button.textContent === a[++j]) {
+                    // alert('सही जवाब');
+                    document.querySelector('#valid').innerHTML = 'सही जवाब (Correct)';
+                    var next = document.querySelector('#next').style.display = 'block';
+                    var valid = document.querySelector('#valid').style.display = 'block';
+                } else {
+                    // alert('गलत जवाब');
+                    document.querySelector('#novalid').innerHTML = 'गलत जवाब (Wrong), सही जवाब है: ' + a[j];
+                    // var next = document.querySelector('#next').style.display = 'block';
+                    var novalid = document.querySelector('#novalid').style.display = 'block';
+                    j = j - 1;
+                }
+            });
+        });
+
+
+
+        i = 1;
+        var next = document.querySelector('#next').addEventListener('click', function () {
+            var valid = document.querySelector('#valid').style.display = 'none';
+            var novalid = document.querySelector('#novalid').style.display = 'none';
+            var next = document.querySelector('#next').style.display = 'none';
+            document.getElementById(`q${i}`).style.display = 'none';
+            document.getElementById(`q${++i}`).style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
